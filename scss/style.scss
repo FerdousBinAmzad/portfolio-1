@@ -1,0 +1,269 @@
+/*Top header*/
+$header-bg:#F9F9F9;
+$color:#BCBDC0;
+$icon-color:#DF4A43;
+$border-color:#FF0000;
+$black:#000;
+$white:#fff;
+$red-color:#DF4A43;
+$primary-color:#8B8F93;
+$fontSize-P:14px;
+
+body{
+  background-color: $header-bg;
+}
+#top_header{
+  background-color: $header-bg;
+  color: $color;
+  border-bottom: 1px solid $color;
+  font-size: 13px;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      padding: 8px;
+      border-left: 1px solid $color;
+    }
+    li:hover{
+      background-color: $header-bg;
+      color: $black;
+      opacity: 0.8;
+      i{
+        color: $black;
+      }
+    }
+    i{
+      padding-right: 5px;
+      padding-left: 10px;
+      color: $icon-color;
+    }
+    li:last-child{
+      border-right: 1px solid $color;
+    }
+  }
+  .social_icon{
+    text-align: right;
+  }
+}
+#header_section{
+  background-color: $black;
+  color: $white;
+  ul{
+    li{
+      position: relative;
+    }
+    li::after{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #915b5b;
+      width: 0%;
+      height: 5px;
+      content: "";
+      transition: 0.5s;
+    }
+    li:hover::after{
+      width: 100%;
+    }
+    a{
+      text-transform: uppercase;
+      padding: 20px 10px;
+      font-style: italic;
+    }
+  }
+}
+#home_slider{
+  .carousel-caption{
+    padding-bottom: 90px;
+  }
+}
+#features_section{
+  h2{
+    color: $red-color;
+  }
+  h5,p{
+    color: #8B8F93;
+    padding-top: 10px;
+  }
+  .d-flex{
+    h5,i{
+      color: $red-color;
+    }
+    p{
+      font-size: $fontSize-P;
+    }
+    i{
+      font-size: 30px;
+      padding: 30px;
+      margin: 10px;
+      border: 1px solid $red-color;
+    }
+    h5{
+      position: relative;
+      padding-bottom: 10px;
+    }
+    h5::after{
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      content: "";
+      background-color: $red-color;
+      position: absolute;
+    }
+  }
+  .d-flex:hover{
+    i{
+      background-color: $red-color;
+      color: $white;
+      transition: 0.5s;
+    }
+  }
+}
+#services_section{
+  h2,h5,i{
+    color: $red-color;
+  }
+  .primary_color h5,p{
+    color: $primary-color;
+  }
+  i{
+    font-size: 30px;
+    border: 5px solid $red-color;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  .item:hover{
+    i{
+      background-color: $red-color;
+      color: $white;
+      transition: 0.5s;
+    }
+  }
+  p{
+    font-size: $fontSize-P;
+  }
+  .owl-theme .owl-dots .owl-dot span{
+    height: 5px;
+    width: 20px;
+    background: $primary-color;
+    border-radius: 0;
+  }
+  .owl-theme .owl-dots .owl-dot.active span{
+    background: $header-bg;
+  }
+  .owl-theme .owl-dots .owl-dot:hover span{
+    background: $header-bg;
+  }
+}
+#courses_section{
+  .card{
+    box-shadow: 2px 2px 5px $primary-color;
+    margin: 10px;
+  }
+  .card:hover{
+    background-color: $primary-color;
+    color: $white;
+  }
+  p{
+    font-size: $fontSize-P;
+  }
+  .owl-theme .owl-dots .owl-dot span{
+    height: 5px;
+    width: 20px;
+    background-color: $primary-color;
+    border-radius: 0;
+  }
+  .owl-theme .owl-dots .owl-dot.active span{
+    background: $red-color;
+  }
+  .owl-theme .owl-dots .owl-dot:hover span{
+    background: $red-color;
+  }
+}
+#testimonial_section{
+  p{
+    font-size: $fontSize-P;
+  }
+  background-image: url('../img/Testimonial_bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#clients_section{
+  background-color: $white;
+  h2{
+    color: $red-color;
+  }
+  h5{
+    color: $primary-color;
+  }
+}
+#about_section{
+  p,a,address,i{
+    font-size: $fontSize-P;
+    color: $color;
+    text-decoration: none;
+  }
+  i{
+    padding-right: 10px;
+  }
+  li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .btn_dark{
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    margin: 5px;
+  }
+  .btn_dark:hover{
+    background-color: $red-color;
+    color: $white;
+  }
+  address:hover,
+  p:hover,
+  li:hover{
+    i{
+      color: $white;
+    }
+  }
+}
+#footer_section{
+  background-color: $black;
+}
+
+@media(max-width: 991px){
+  #top_header{
+    .contact_us li:last-child{
+      border-right: none;
+    }
+  }
+  #home_slider{
+  }
+}
+@media(max-width: 768px){
+  #top_header{
+    .social_icon{
+      text-align: center;
+    }
+  }
+  #home_slider{
+    img{
+    }
+    .carousel-caption{
+      h3{
+      }
+      p{
+      }
+    }
+  }
+}
+@media(max-width: 576px){}
+@media(max-width: 420px){
+  #top_header{
+    display: none;
+  }
+}

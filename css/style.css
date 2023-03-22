@@ -1,0 +1,272 @@
+/*Top header*/
+body {
+  background-color: #F9F9F9;
+}
+
+#top_header {
+  background-color: #F9F9F9;
+  color: #BCBDC0;
+  border-bottom: 1px solid #BCBDC0;
+  font-size: 13px;
+}
+
+#top_header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#top_header ul li {
+  display: inline-block;
+  padding: 8px;
+  border-left: 1px solid #BCBDC0;
+}
+
+#top_header ul li:hover {
+  background-color: #F9F9F9;
+  color: #000;
+  opacity: 0.8;
+}
+
+#top_header ul li:hover i {
+  color: #000;
+}
+
+#top_header ul i {
+  padding-right: 5px;
+  padding-left: 10px;
+  color: #DF4A43;
+}
+
+#top_header ul li:last-child {
+  border-right: 1px solid #BCBDC0;
+}
+
+#top_header .social_icon {
+  text-align: right;
+}
+
+#header_section {
+  background-color: #000;
+  color: #fff;
+}
+
+#header_section ul li {
+  position: relative;
+}
+
+#header_section ul li::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #915b5b;
+  width: 0%;
+  height: 5px;
+  content: "";
+  transition: 0.5s;
+}
+
+#header_section ul li:hover::after {
+  width: 100%;
+}
+
+#header_section ul a {
+  text-transform: uppercase;
+  padding: 20px 10px;
+  font-style: italic;
+}
+
+#home_slider .carousel-caption {
+  padding-bottom: 90px;
+}
+
+#features_section h2 {
+  color: #DF4A43;
+}
+
+#features_section h5, #features_section p {
+  color: #8B8F93;
+  padding-top: 10px;
+}
+
+#features_section .d-flex h5, #features_section .d-flex i {
+  color: #DF4A43;
+}
+
+#features_section .d-flex p {
+  font-size: 14px;
+}
+
+#features_section .d-flex i {
+  font-size: 30px;
+  padding: 30px;
+  margin: 10px;
+  border: 1px solid #DF4A43;
+}
+
+#features_section .d-flex h5 {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#features_section .d-flex h5::after {
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  content: "";
+  background-color: #DF4A43;
+  position: absolute;
+}
+
+#features_section .d-flex:hover i {
+  background-color: #DF4A43;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#services_section h2, #services_section h5, #services_section i {
+  color: #DF4A43;
+}
+
+#services_section .primary_color h5, #services_section p {
+  color: #8B8F93;
+}
+
+#services_section i {
+  font-size: 30px;
+  border: 5px solid #DF4A43;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+#services_section .item:hover i {
+  background-color: #DF4A43;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#services_section p {
+  font-size: 14px;
+}
+
+#services_section .owl-theme .owl-dots .owl-dot span {
+  height: 5px;
+  width: 20px;
+  background: #8B8F93;
+  border-radius: 0;
+}
+
+#services_section .owl-theme .owl-dots .owl-dot.active span {
+  background: #F9F9F9;
+}
+
+#services_section .owl-theme .owl-dots .owl-dot:hover span {
+  background: #F9F9F9;
+}
+
+#courses_section .card {
+  box-shadow: 2px 2px 5px #8B8F93;
+  margin: 10px;
+}
+
+#courses_section .card:hover {
+  background-color: #8B8F93;
+  color: #fff;
+}
+
+#courses_section p {
+  font-size: 14px;
+}
+
+#courses_section .owl-theme .owl-dots .owl-dot span {
+  height: 5px;
+  width: 20px;
+  background-color: #8B8F93;
+  border-radius: 0;
+}
+
+#courses_section .owl-theme .owl-dots .owl-dot.active span {
+  background: #DF4A43;
+}
+
+#courses_section .owl-theme .owl-dots .owl-dot:hover span {
+  background: #DF4A43;
+}
+
+#testimonial_section {
+  background-image: url("../img/Testimonial_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#testimonial_section p {
+  font-size: 14px;
+}
+
+#clients_section {
+  background-color: #fff;
+}
+
+#clients_section h2 {
+  color: #DF4A43;
+}
+
+#clients_section h5 {
+  color: #8B8F93;
+}
+
+#about_section p, #about_section a, #about_section address, #about_section i {
+  font-size: 14px;
+  color: #BCBDC0;
+  text-decoration: none;
+}
+
+#about_section i {
+  padding-right: 10px;
+}
+
+#about_section li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#about_section .btn_dark {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 5px;
+}
+
+#about_section .btn_dark:hover {
+  background-color: #DF4A43;
+  color: #fff;
+}
+
+#about_section address:hover i,
+#about_section p:hover i,
+#about_section li:hover i {
+  color: #fff;
+}
+
+#footer_section {
+  background-color: #000;
+}
+
+@media (max-width: 991px) {
+  #top_header .contact_us li:last-child {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #top_header .social_icon {
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  #top_header {
+    display: none;
+  }
+}
